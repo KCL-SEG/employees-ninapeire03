@@ -27,7 +27,7 @@ class Employee:
 
     def __str__(self):
         if isinstance(self.contract_type, HourlyContract):
-            str = f"{self.name} works on a contract of {self.contract_type.hours_worked} at {self.contract_type.hourly_wage}/hour"
+            str = f"{self.name} works on a contract of {self.contract_type.hours_worked} hours at {self.contract_type.hourly_wage}/hour"
         elif isinstance(self.contract_type, SalaryContract):
             str = f"{self.name} works on a monthly salary of {self.contract_type.salary}"
         else:
