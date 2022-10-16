@@ -40,7 +40,7 @@ class Employee:
         else:
             str += "."
 
-        str += f" Their total pay is {self.get_pay()}."
+        str += f"  Their total pay is {self.get_pay()}."
 
         return str
 
@@ -93,3 +93,12 @@ robbie = Employee('Robbie', SalaryContract(2000), BonusCommission(1500))
 
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 ariel = Employee('Ariel', HourlyContract(30, 120), BonusCommission(600))
+
+
+# Tests for command line execution.
+print(billie)
+print(charlie)
+print(renee)
+print(jan)
+print(robbie)
+print(ariel)
