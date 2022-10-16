@@ -40,7 +40,7 @@ class Employee:
         else:
             str += "."
 
-        str += f"  Their total pay is {self.get_pay()}."
+        str += f" Their total pay is {self.get_pay()}."
 
         return str
 
